@@ -11,23 +11,54 @@ LOCAL_MODULE := cocos2dcpp_shared
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
-                   ../../Classes/AppDelegate.cpp \
-                   ../../Classes/HelloWorldScene.cpp
+				   ../../Classes/AppDelegate.cpp \
+				   ../../Classes/StartScene.cpp \
+				   ../../Classes/ChapterScene.cpp \
+				   ../../Classes/Person.cpp \
+				   ../../Classes/Bullet.cpp \
+				   ../../Classes/BulletManager.cpp \
+				   ../../Classes/Role.cpp \
+				   ../../Classes/GameScene.cpp \
+				   ../../Classes/SceneManager.cpp\
+				   ../../Classes/Player.cpp \
+				   ../../Classes/NPC.cpp \
+				   ../../Classes/PauseLayer.cpp \
+				   ../../Classes/FirstScene.cpp \
+				   ../../Classes/SecondScene.cpp \
+				   ../../Classes/ThirdScene.cpp  \
+				   ../../Classes/StateController.cpp \
+				   ../../Classes/SuccessLayer.cpp \
+				   ../../Classes/FailureLayer.cpp \
+				   ../../Classes/ModeSelectScene.cpp \
+				   ../../Classes/SurvivalScene.cpp \
+				   ../../Classes/CompeteScene.cpp \
+				   ../../Classes/Prop.cpp \
+				   ../../Classes/PropManager.cpp \
+				   ../../Classes/ConfigureScene.cpp \
+				   ../../Classes/HelpScene.cpp \
+				   ../../Classes/CompeteStateController.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
-# _COCOS_HEADER_ANDROID_BEGIN
-# _COCOS_HEADER_ANDROID_END
+LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocosdenshion_static
 
+LOCAL_WHOLE_STATIC_LIBRARIES += box2d_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocosbuilder_static
+LOCAL_WHOLE_STATIC_LIBRARIES += spine_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocostudio_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocos_network_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 
-LOCAL_STATIC_LIBRARIES := cocos2dx_static
-
-# _COCOS_LIB_ANDROID_BEGIN
-# _COCOS_LIB_ANDROID_END
 
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,.)
+$(call import-module,audio/android)
 
-# _COCOS_LIB_IMPORT_ANDROID_BEGIN
-# _COCOS_LIB_IMPORT_ANDROID_END
+$(call import-module,Box2D)
+$(call import-module,editor-support/cocosbuilder)
+$(call import-module,editor-support/spine)
+$(call import-module,editor-support/cocostudio)
+$(call import-module,network)
+$(call import-module,extensions)
