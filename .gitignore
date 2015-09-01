@@ -3,3 +3,6 @@ proj.win32/Debug.win32/
 
 #忽略cocos2d目录
 cocos2d/
+
+#忽略vs工程产生的文件
+proj.win32/

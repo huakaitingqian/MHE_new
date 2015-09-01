@@ -1,4 +1,7 @@
 #include "BulletManager.h"
+#include "SimpleAudioEngine.h"
+
+using namespace CocosDenshion;
 
 extern bool OpenMusicEffect;
 

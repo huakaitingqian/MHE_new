@@ -17,7 +17,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	auto director = Director::getInstance();
 	auto glview = director->getOpenGLView();
 	if(!glview) {
-		glview = GLView::create("MHE");
+		glview = GLViewImpl::create("MHE");
 		director->setOpenGLView(glview);
 	}
 

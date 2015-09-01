@@ -1,4 +1,5 @@
 #include "FailureLayer.h"
+#include <SimpleAudioEngine.h>
 USING_NS_CC;
 
 FailureLayer::FailureLayer()

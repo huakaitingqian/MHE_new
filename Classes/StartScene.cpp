@@ -5,6 +5,7 @@
 #include "ConfigureScene.h"
 #include "Configure.h"
 #include "HelpScene.h"
+#include <SimpleAudioEngine.h>
 
 USING_NS_CC;
 

@@ -1,4 +1,5 @@
 #include "SuccessLayer.h"
+#include <SimpleAudioEngine.h>
 USING_NS_CC;
 
 SuccessLayer::SuccessLayer()

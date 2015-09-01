@@ -2,6 +2,7 @@
 #include "PauseLayer.h"
 #include "FailureLayer.h"
 #include "SuccessLayer.h"
+#include <SimpleAudioEngine.h>
 USING_NS_CC;
 extern bool OpenMusicEffect;
 extern bool OpenMusic;

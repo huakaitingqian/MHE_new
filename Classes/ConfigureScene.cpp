@@ -1,6 +1,7 @@
 #include "ConfigureScene.h"
 #include "StartScene.h"
 #include "SceneManager.h"
+#include <SimpleAudioEngine.h>
 
 USING_NS_CC;
 using namespace ui;

@@ -2,6 +2,7 @@
 #include "PropManager.h"
 #include "BulletManager.h"
 #include "SurvivalScene.h"
+#include <SimpleAudioEngine.h>
 
 extern bool OpenMusicEffect;
 

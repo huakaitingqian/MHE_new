@@ -1,4 +1,5 @@
 #include "Person.h"
+#include <SimpleAudioEngine.h>
 
 USING_NS_CC;
 

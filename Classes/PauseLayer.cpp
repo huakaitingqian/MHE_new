@@ -5,6 +5,7 @@
 #include "SurvivalScene.h"
 #include "CompeteScene.h"
 #include "ModeSelectScene.h"
+#include <SimpleAudioEngine.h>
 
 USING_NS_CC;
 

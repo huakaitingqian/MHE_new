@@ -1,6 +1,7 @@
 #include "SurvivalScene.h"
 #include "PauseLayer.h"
 #include "FailureLayer.h"
+#include <SimpleAudioEngine.h>
 
 USING_NS_CC;
 extern bool OpenMusicEffect;
